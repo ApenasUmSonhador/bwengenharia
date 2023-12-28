@@ -8,6 +8,6 @@ function calcularComissao() {
         var taxaPorVolume = volume * 0.06;
         var comissao = media * taxaPorVolume * 0.2;
 
-        document.getElementById('resultado').textContent = 'Comissão resultante: ' + comissao;
+        document.getElementById('resultado').textContent = 'Comissão resultante: R$ ' + comissao.toLocaleString('pt-BR');
     }
 }
