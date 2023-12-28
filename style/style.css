@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin-left: 10px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: #0d3640;
+}
+
+img {
+  max-width: 90vw;
+}
+
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.logo-header {
+  max-height: 100px;
+}
+
+label,
+p {
+  font-size: larger;
+}
+
+input {
+  width: 200px;
+}
+
+section {
+  display: flex;
+}
+
+div {
+  margin-left: 50px;
+}
+
+.esquerda {
+  margin-left: 0;
+}
