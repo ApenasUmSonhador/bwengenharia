@@ -1,13 +1,21 @@
 function calcularComissao() {
-    var media = parseFloat(document.getElementById('media').value);
-    var volume = parseFloat(document.getElementById('volume').value);
+    var media = document.getElementById('media').value;
+    var volume = document.getElementById('volume').value;
+
+    if (media == "" || volume == "") {
+        alert("Por favor, preencha todos os campos antes de calcular.");
+        return;
+    }
 
     if (volume < 5 || volume > 10) {
-        document.getElementById('resultado').textContent = 'O volume deve ser de no mínimo 5 e no máxímo 10 anos, tente novamente.';
-    } else {
-        var taxaPorVolume = volume * 0.06;
-        var comissao = media * taxaPorVolume * 0.2;
-
-        document.getElementById('resultado').textContent = 'Comissão resultante: R$ ' + comissao.toLocaleString('pt-BR');
+        alert("O volume deve ser de no mínimo 5 e no máxímo 10 anos, tente novamente.");
+        return;
     }
+
+    media = parseFloat(media);
+    volume = parseFloat(volume);
+    var taxaPorVolume = volume * 0.06;
+    var comissao = media * taxaPorVolume * 0.2;
+
+    document.getElementById('resultado').textContent = 'Comissão resultante: R$ ' + comissao.toLocaleString('pt-BR');
 }
