@@ -33,7 +33,8 @@ p {
   font-size: larger;
 }
 
-input {
+input,
+select {
   width: 200px;
 }
 
