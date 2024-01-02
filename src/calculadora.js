@@ -7,7 +7,7 @@ function calcularComissao() {
         return;
     }
 
-    if (prazo != 5 || prazo != 7 || prazo != 10) {
+    if (prazo != 5 && prazo != 7 && prazo != 10) {
         alert("O prazo deve ser de 5, 7 ou 10 anos, tente novamente.");
         return;
     }
